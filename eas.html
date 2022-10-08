@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Etch -A- Sketch</title>
+        <link rel="stylesheet" href="eas.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script src="eas.js"></script>
+    </head>
+    <body>
+        <h1>"Etch-A-Sketch"</h1>
+        <div class="header">
+        <h4>Select a size</h4>
+        <button id="select" class="btn btn-primary">Select</button>
+        </div>
+        <p id="message"></p>
+        <p id="draw"></p>
+        <p id="erasenote"></p>
+        <div class="board"></div>
+        <div class="footer">
+        <button id="black" class="btn btn-dark" onclick="deleteEraseNote();getcolor('black')">Black</button>
+        <button id="random" class="btn btn-warning" onclick="deleteEraseNote();getcolor('random')">Random</button>
+        <button id="reset" class="btn btn-success" onclick="deleteEraseNote();resetBoard()">Reset</button>
+        <button id="erase" class="btn btn-secondary" onclick="getcolor('erase');eraseNote()">Erase</button>
+        </div>
+    </body>
+</html>
